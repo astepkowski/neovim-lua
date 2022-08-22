@@ -213,7 +213,7 @@ require('onedark').setup {
 require('onedark').load()
 ```
 
-* Statusline - [nvim/lua/plugins/feline.lua](nvim/lua/core/statusline.lua):
+* Statusline - [nvim/lua/core/statusline.lua](nvim/lua/core/statusline.lua):
 
 ```lua
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
@@ -269,21 +269,15 @@ See: `:help startuptime`
 
 **OneDark (darker)**
 
-![onedark_1](img/1-onedark_1.png)
-
-![onedark_2](img/2-onedark_2.png)
+![1-onedark.png](img/1-onedark.png)
 
 **Monokai**
 
-![monokai_1](img/3-monokai_1.png)
-
-![monokai_2](img/4-monokai_2.png)
+![2-monokai.png](img/2-monokai.png)
 
 **Rosé Pine**
 
-![rose-pine_1](img/5-rose-pine_1.png)
-
-![rose-pine_2](img/6-rose-pine_2.png)
+![3-rose-pine.png](img/3-rose-pine.png)
 
 </details>
 
@@ -315,11 +309,17 @@ See: `:help startuptime`
 
 * Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
 
-## Disclaimer
-
-As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone.
-Then feel free to take what you need but **don't install anything without checking first!**
-
 ---
 
-**Thanks to all the authors of the sources mentioned above, to all from whom I "stole" some configs, to the users of /r/Neovim subreddit for the support of the configuration and to [all the people who help me](https://github.com/brainfucksec/neovim-lua/graphs/contributors) to improve this setup with their reports and advices.**
+## Disclaimer
+
+This setup is based on [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone. Then feel free to take what you need but **don't install anything without checking first!**
+
+## Thanks to:
+
+- [All the contributors](https://github.com/brainfucksec/neovim-lua/graphs/contributors) who helped improve this setup with their reports and advices.
+
+- All the authors of the sources mentioned above.
+
+- The users of /r/Neovim subreddit for the support of the configuration.
+
