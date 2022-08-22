@@ -62,6 +62,11 @@ return packer.startup(function(use)
   -- Icons
   use 'kyazdani42/nvim-web-devicons'
 
+
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
   -- Tag viewer
   use 'preservim/tagbar'
 
@@ -108,6 +113,15 @@ return packer.startup(function(use)
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
+
+  -- toggle terminal in more ergonomic way
+  use {
+    "akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
+    require("toggleterm").setup({
+      open_mapping = [[<c-\>]],
+
+    })
+  end}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
