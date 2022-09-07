@@ -90,6 +90,7 @@ return packer.startup(function(use)
     requires = {
       'L3MON4D3/LuaSnip',
       'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-vsnip',
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-buffer',
       'saadparwaiz1/cmp_luasnip',
@@ -126,6 +127,17 @@ return packer.startup(function(use)
     })
   end}
 
+  use {
+    "simrat39/rust-tools.nvim"
+  }
+use {
+    'saecki/crates.nvim',
+    tag = 'v0.2.1',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+        require('crates').setup()
+    end,
+}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

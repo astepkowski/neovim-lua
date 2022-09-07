@@ -19,6 +19,7 @@ require('plugins/nvim-cmp')
 require('plugins/nvim-lspconfig')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
+require('plugins/rust-tools')
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
